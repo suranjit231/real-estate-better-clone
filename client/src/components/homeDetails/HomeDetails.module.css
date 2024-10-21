@@ -1,0 +1,201 @@
+
+.homeDetailsContainer{
+    width: 100%;
+    height: 100%;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.customerReviewSeaction{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    
+}
+
+ .leftReviewContainer{
+    min-height: 500px;
+    width: 50%;
+    /* background-color: pink; */
+    padding: 60px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+} 
+
+
+
+.reviewBox{
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+}
+
+.reviewBox img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.reviewControlBtnBox{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 22px;
+}
+
+.reviewControlBtnBox button{
+    padding: 12px 20px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+   
+}
+
+.btnWrapper{
+    padding: 5px;
+    transition: 0.4s ease-in-out;
+}
+
+.btnWrapper:hover{
+    background-color: #004a2f;
+    border-radius: 30px;
+}
+
+.btnWrapper:active{
+    transform: scale(0.85);
+}
+
+
+.rightReviewContainer{
+    min-height: 500px;
+    /* background-color: grey; */
+    width: 50%;
+    /* padding: 50px; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+ 
+} 
+
+.rightReviewContainer h1{
+    font-size: 5rem;
+    line-height: 1.03;
+    margin-bottom: 20px;
+}
+
+.storiesBtn{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #004a2f;
+    max-width: 250px;
+    border: none;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: 500;
+    color: aliceblue;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.storiesBtn:hover{
+    background-color: #03722e;
+}
+
+.storiesBtn:active{
+    transform: scale(1.1);
+}
+
+
+.trustPilotRateInfo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sterIcon{
+    display: flex;
+    align-items: center;
+}
+
+.trustPilotRateInfo span:nth-child(2){
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.trustPilotRateInfo span:nth-child(3){
+    font-size: 16px;
+    font-weight: 400;
+    color: #494949;
+    margin-left: 8px;
+}
+
+
+.sterIcon:nth-child(1){
+    font-size: 25px;
+    color: #46b363;
+}
+
+.activeR{
+    background-color:#03722e;
+    border-radius: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .rightReviewContainer h1{
+        font-size: 3rem;
+        line-height: 1.1;
+        font-weight: 700;
+
+    }
+
+    .leftReviewContainer{
+        padding: 60px 15px;
+    }
+   
+}
+
+
+@media screen and (max-width: 540px) {
+    .customerReviewSeaction{
+
+        flex-wrap: wrap;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .leftReviewContainer{
+        width: 100%;
+        order: 2;
+    }
+
+    .rightReviewContainer{
+        margin-top: 50px;
+        order: 1;
+        width: 100%;
+        min-height: auto;
+        align-items: center;
+    }
+
+    .storiesBtn{
+        max-width: 320px;
+        width:100%;
+    }
+    
+}

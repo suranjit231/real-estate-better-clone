@@ -1,0 +1,270 @@
+
+.serviceSecContainer{
+    width: 100%;
+    height: 100%;
+    padding: 30px 20px 120px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.serviceSectionWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.firstServiceRaw{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0px 30px;
+    justify-content: space-between;
+}
+
+.smallServiceBox{
+    width: 33%;
+    height: 380px;
+    background-color: #d3e4cc;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.smallServiceBox h2{
+    font-size: 25px;
+    font-weight: 500;
+    color: #333;
+}
+
+.serviceBtn{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+    transition: 0.4s ease-in-out;
+}
+
+.serviceBtn:hover{
+    background-color: #006A4E;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.prevIcon{
+    font-size: 20px;
+}
+
+.smallCardImgBox{
+    width: 100%;
+}
+
+.smallCardImgBox img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* =========================== big service box ========================== */
+
+.bigServiceBox{
+    width: 65%;
+    height: 380px;
+    background-color: #d3e4cc;
+    border-radius: 10px;
+    display: flex;
+    padding: 30px;
+    gap: 15px;
+}
+
+.serviceInfoDiv{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.serviceInfoDiv p{
+    font-size: 15px;
+}
+
+.bigServiceBoxImage{
+    padding: 10px;
+    width: 40%;
+}
+
+.bigServiceBoxImage img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.bigServiceBox2{
+    display: flex;
+}
+
+.bigServiceBox2 .serviceInfoDiv{
+    order: 2;
+}
+
+.bigServiceBox2 .bigServiceBoxImage{
+    order: 1;
+}
+
+.serviceInfoDiv h2{
+    font-size: 25px;
+    font-weight: 500;
+    color: #333;
+}
+
+
+
+/* ============================== service header section ================= */
+
+
+.serviceSectionHeader{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.serviceSectionHeader h2{
+    font-size: 3rem;
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 1.1;
+}
+
+.serviceBtnHeaderContainer{
+    display: flex;
+    align-items: center;
+}
+
+.btnWrapper{
+   
+    padding: 5px;
+    transition: 0.4s ease-in-out;
+}
+
+.btnWrapper button{
+    padding: 12px 20px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.btnWrapper:hover{
+    background-color: #004a2f;
+    border-radius: 30px;
+}
+
+.btnWrapper:active{
+    transform: scale(0.85);
+}
+
+
+@media screen and (max-width: 768px) {
+    .smallServiceBox{
+        width: 100%;
+        min-width: 400px;
+        height: auto;
+    }
+
+    .bigServiceBox{
+        width: 100%;
+        display: flex;
+        min-width: 400px;
+        height: auto;
+    }
+
+    .firstServiceRaw{
+        width: 100%;
+        gap: 25px;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+
+  .bigServiceBoxImage{
+        padding: 0px;
+        width: 60%;
+        height: 50%;
+    } 
+    
+    .bigServiceBoxImage img{
+        width: 100%;
+        border-radius: 10px;
+    } 
+
+    .serviceSectionHeader{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 540px) {
+    .bigServiceBox{
+        flex-direction: column;
+    }
+
+    .serviceInfoDiv{
+        width: 100%;
+    }
+
+    .serviceInfoDiv p{
+        display: none;
+    }
+
+    .bigServiceBoxImage{
+        width: 80%;
+        height: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .serviceSectionHeader h2{
+        font-size: 2rem;
+    }
+
+    .serviceBtnHeaderContainer{
+        width: 100%;
+    }
+
+
+    .btnWrapper{
+   
+        padding: 3px;
+        transition: 0.4s ease-in-out;
+        
+    }
+    
+    .btnWrapper button{
+        padding: 6px 8px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 30px;
+        cursor: pointer;
+        border: 1px solid #ccc;
+    }
+    
+}

@@ -1,0 +1,106 @@
+
+
+.footerContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 30px 20px 50px 20x;
+   
+}
+
+.footerLinkSection{
+    height: auto;
+    padding: 30px 20px 40px 40px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footerLogo{
+    padding: 30px 40px 0px 40px;
+   
+
+
+}
+
+.footerLinkBox{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    /* max-width: 400px; */
+    width: 33%;
+    min-width: 350px;
+    margin-bottom: 30px;
+}
+
+.footerBox{
+    width: 20%;
+    /* background-color: yellowgreen; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    min-width: 200px;
+    margin-bottom: 30px;
+}
+
+
+.footerLogo h1{
+    font-size: 30px;
+    font-style: italic;
+    color: rgba(14, 44, 14, 0.856);
+}
+
+.footerTitle{
+    max-width: 180px;
+    width: 100%;
+    height: 25px;
+}
+
+.footerTitle img{
+    max-width: 180px;
+    height: 25px;
+}
+
+.linkDesc{
+    font-size: 15px;
+    color: #333;
+}
+
+.resourceHeading{
+    font-size: 20px;
+    font-weight: 600;
+    color: #242323;
+}
+
+.footerBox span {
+    display: inline-block; 
+    cursor: pointer;
+   
+    padding-bottom: 4px;
+    transition: border-color 0.3s ease; 
+    border-bottom: 1px solid transparent; 
+}
+
+.copyWrite{
+    padding: 20px;
+    text-align: center;
+    color: rgb(0, 68, 6);
+}
+
+
+@media screen and (max-width: 500px) {
+    .footerLinkSection{
+        flex-direction: column;
+    }
+    .footerLinkBox{
+        width: 100%;
+    }
+
+    .footerBox{
+        width: 100%;
+    }
+    
+}
